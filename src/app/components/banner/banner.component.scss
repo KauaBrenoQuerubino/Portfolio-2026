@@ -1,0 +1,84 @@
+
+
+.midia {
+    height: 120vh;
+    width: 100%;
+
+    position: fixed;
+    z-index: 0;
+
+}
+
+.container {
+    position: relative;
+    z-index: 5;
+
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    .text {
+        
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        span {
+            background: #A1BFFF;
+            background: linear-gradient(to right, #A1BFFF 0%, #ffff 50%,#A649D2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.1em;
+        }
+
+        p {
+            background: #A1BFFF;
+            background: linear-gradient(to right, #A1BFFF 0%, #ffff 50%,#A649D2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            font-size: 2em;
+        }
+
+    
+    }
+}
+
+
+
+span {
+	display: inline-block;
+	opacity: 0;
+	filter: blur(20px);
+	animation: blurIn 2s ease forwards;
+}
+
+span:nth-child(1) {
+	animation-delay: 1s;
+}
+
+span:nth-child(2) {
+	animation-delay: 1.2s;
+}
+
+@keyframes blurIn {
+	0% {
+		opacity: 0;
+		filter: blur(30px);
+	}
+	60% {
+		opacity: 1;
+		filter: blur(8px);
+	}
+	100% {
+		opacity: 1;
+		filter: blur(0);
+	}
+}
+
+
+

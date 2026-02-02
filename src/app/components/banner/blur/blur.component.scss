@@ -1,0 +1,20 @@
+.gradient-blur {
+    position: fixed;
+    z-index: 2;
+    inset: 0;
+    backdrop-filter: blur(12px); /* Apply blur */
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+
+    /* Create a gradient mask to fade the blur */
+    -webkit-mask-image: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(255, 0, 0, 0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+
+    mask-image: linear-gradient(to top, rgba(255, 0, 0, 0) 0%, rgb(5, 5, 5) 100%);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+
+    height: 80vh;
+    background-color: rgba(137, 43, 226, 0.295);
+}
+
