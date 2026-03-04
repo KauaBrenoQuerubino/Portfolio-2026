@@ -1,0 +1,60 @@
+section {
+    position: relative;
+    z-index: 5;
+
+    height: 100vh;
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        max-width: 100%;
+        
+
+        .card {
+            position: relative;
+            background: rgba(19, 6, 27, 0.6); /* levemente transparente */
+            overflow: hidden;
+
+            border-radius: 10px;
+
+            
+            display: flex;
+            flex-direction: column;
+
+
+            width: 400px;
+            height: 350px;
+
+            padding: 40px !important;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            text-align: start;
+
+            img {
+                border-radius: 10px;
+                width: 350px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(15px);
+                z-index: 0;
+            }
+
+            & * {
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+
+}

@@ -4,7 +4,6 @@ import { BannerComponent } from "./components/banner/banner.component";
 import { NavComponent } from "./components/nav/nav.component";
 import { SobreComponent } from "./components/sobre/sobre.component";
 import { SkillsComponent } from './components/skills/skills.component';
-import { ProjectsComponent } from './components/projects/projects.component';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +11,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
     BannerComponent, 
     NavComponent, 
     SobreComponent, 
-    SkillsComponent, 
-    ProjectsComponent
+    SkillsComponent
   ],
 
   templateUrl: './app.component.html',
