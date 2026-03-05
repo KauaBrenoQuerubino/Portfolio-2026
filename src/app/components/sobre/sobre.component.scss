@@ -18,6 +18,8 @@ section {
             
             width: 100%;
             display: flex;
+            justify-content: space-between;
+
           
             align-items: center;
 
@@ -28,7 +30,7 @@ section {
                 align-items: center;
                 justify-content: center;
                 img {
-                    min-width: 650px;
+                    width: 650px;
                     border-radius: 10px;
                 }
             }
@@ -113,13 +115,21 @@ section {
                     height: 170px;
                     border-radius: 20px;
                     padding: 25px !important;
-                    background: rgba(19, 6, 27, 0.6); /* levemente transparente */
+                    background: rgba(58, 25, 90, 0.363); /* levemente transparente */
                     overflow: hidden;
 
 
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+
+                    transition: .5s;
+
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
 
                     .title {
                         height: 100%;

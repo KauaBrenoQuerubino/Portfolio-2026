@@ -5,10 +5,22 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quaerat consectetur distinctio tempore commodi incidunt vitae consequatur. Odio beatae sint, incidunt ipsa quas laudantium quisquam totam voluptas eius quidem numquam!</p>
         </div>
         <div class="buttons">
-            <button class="select">Projetos</button> <button>Certificados</button> <button>Habilidades Tecnicas</button>
+            <button [ngClass]="{ 'select': btnSelect == 1}" (click)="btnSelect = 1">Projetos</button> 
+            <button [ngClass]="{ 'select': btnSelect == 2}" (click)="btnSelect = 2">Certificados</button> 
+            <button [ngClass]="{ 'select': btnSelect == 3}" (click)="btnSelect = 3">Habilidades Tecnicas</button>
         </div>
         <div class="content">
-            <app-projetos />
+
+            @if (btnSelect == 1) {
+                <app-projetos />
+            }
+            @else if (btnSelect == 2) {
+                <app-certificados />
+            }
+            @else{
+                <app-habilidades />
+            }
+            
         </div>
     </div>
 </section>

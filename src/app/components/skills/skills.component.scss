@@ -60,12 +60,14 @@ section {
             align-items: center;
             justify-content: space-between;
 
-            background: rgba(19, 6, 27, 0.6); /* levemente transparente */
+            background: rgba(58, 25, 90, 0.363); /* levemente transparente */
             overflow: hidden;
 
             button {
                 display: flex;
                 flex-direction: column;
+
+                cursor: pointer;
 
                 align-items: center;
                 justify-content: center;
@@ -88,7 +90,7 @@ section {
             }
 
             .select {
-                background: rgba(82, 31, 107, 0.212);
+                background: rgba(58, 25, 90, 0.233);
             }
 
             &::before {
