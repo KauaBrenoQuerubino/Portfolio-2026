@@ -8,17 +8,10 @@ import { ProjetoInfosComponent } from "./components/skills/content/projetos/proj
 
 @Component({
   selector: 'app-root',
-  imports: [
-    BannerComponent,
-    NavComponent,
-    SobreComponent,
-    SkillsComponent,
-    ProjetoInfosComponent
-],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  standalone: true,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  imports: [RouterOutlet],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppComponent {
   title = 'Portifolio-2026';

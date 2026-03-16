@@ -1,27 +1,17 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { PROJETO_PADRAO } from '../../../../model/projetos';
 
 @Component({
   selector: 'app-projetos',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './projetos.component.html',
   styleUrl: './projetos.component.scss'
 })
 export class ProjetosComponent {
 
 
-  projetos: any[] = [
-    {
-      url_image : "imgs/OIP.jfif",
-      url_video : "teste",
-      nome : "PROJETO 1",
-      descricao: "lorem ipson teste",
-      link_repositorio: "link",
+  projetos: any[] = PROJETO_PADRAO
 
-      tecnologias: [
-        "teste", "teste"
-      ]
-    }
-  ]
-
-
+  
 }

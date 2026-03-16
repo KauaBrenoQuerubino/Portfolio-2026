@@ -1,15 +1,26 @@
+<app-blur />
+
+<div class="voltar" (click)="voltar()">
+    <h1><i class="bi bi-arrow-left"></i></h1>
+</div>
 <section>
     <div class="container">
         <div class="col">
-            <h1>TITULO</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, perspiciatis! Voluptatem non laborum exercitationem, maiores quam, quod blanditiis suscipit in nesciunt repellat quaerat eaque aut! Iure animi nisi eaque sint!</p>
-            <a href=""></a>
+            <h1>{{projeto?.nome}}</h1>
+            <p>{{projeto?.descricao}}</p>
+           
             <div class="tecs">
-                <div class="icons">OLA</div>
+                @for (item of projeto?.tecnologias; track $index) {
+                    <div class="icon"><img [src]=" 'icons/' + item + '.svg'" alt=""></div>
+                }
             </div>
         </div>
         <div class="col">
-            <video src="video/videoteste.mp4" [autoplay]="true" [loop]="true" [muted]="true"></video>
+            <video [src]="projeto?.url_video" [autoplay]="true" [loop]="true" [muted]="true"></video>
+            <div class="btns">
+                <button><a [href]="projeto?.link_repositorio"><i class="bi bi-github"></i></a></button>
+                <button><a [href]="projeto?.link_download"><i class="bi bi-cloud-download-fill"></i></a></button>
+            </div>
         </div>
     </div>
 </section>

@@ -1,10 +1,20 @@
+.voltar {
+    position: fixed;
+    z-index: 10000;
+    color: white;
+
+    left: 10%;
+    top: 5%;
+}
 section {
-    background-color: red;
     position: relative;
     z-index: 5;
 
     .container {
         display: flex;
+        align-items: center;
+        height: 100vh;
+
 
         .col {
             width: 50%;
@@ -15,6 +25,57 @@ section {
             align-items: center;
             justify-content: center;
 
+
+            h1 {
+                
+                background: #A1BFFF;
+                background: linear-gradient(to right, #A1BFFF 0%, #ffff 50%,#A649D2 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                font-weight: 800;
+                font-size: 40px
+            }
+
+            p {
+
+                background: #A1BFFF;
+                background: linear-gradient(to right, #A1BFFF 0%, #ffff 50%,#A649D2 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                text-align: center;
+                width: 40%;
+            }
+
+            .tecs {
+                display: flex;
+                width: 100%;
+
+                gap: 10px;
+
+                .icon {
+
+                    margin-bottom: 20px !important;
+
+                    position: relative;
+                    background: rgba(58, 25, 90, 0.349); /* levemente transparente */
+                    overflow: hidden;
+
+                    border-radius: 10px;
+
+                    
+                    display: flex;
+                    flex-direction: column;
+
+                    padding: 10px !important;
+
+                    img {
+                        height: 50px;
+                    }
+                }
+            }
+
             h1, p {
                 width: 100%;
                 text-align: start !important;
@@ -22,7 +83,49 @@ section {
 
             video {
                width: 550px;
+               box-shadow: rgba(255, 0, 106, 0.185) 0px 22px 70px 4px;
             }
+
+            &:first-child {
+                height: 45%;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            &:last-child {
+                width: 100%;
+            }
+
+            .btns {
+                display: flex;
+                padding: 20px !important;
+
+                gap: 40px;
+
+                button {
+
+                    a {
+                        color: white;
+                    }
+
+                    cursor: pointer;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 10px;
+                    background: #210b30b0;
+                    color: white;
+                    border: none;
+                    transition: .5s;
+                    i {
+                        font-size: 30px;
+                    }
+
+                    &:hover {
+                         background: #4d2c63b0;
+                    }
+                }
+            }
+        
         }
     }
 }
