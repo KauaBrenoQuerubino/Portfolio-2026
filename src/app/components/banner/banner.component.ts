@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BlurComponent } from "./blur/blur.component";
 
+
 @Component({
   selector: 'app-banner',
   imports: [BlurComponent],
@@ -12,4 +13,6 @@ import { BlurComponent } from "./blur/blur.component";
 })
 export class BannerComponent {
 
+
+  
 }

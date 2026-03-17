@@ -1,10 +1,6 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { AfterViewInit, Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { BannerComponent } from "./components/banner/banner.component";
-import { NavComponent } from "./components/nav/nav.component";
-import { SobreComponent } from "./components/sobre/sobre.component";
-import { SkillsComponent } from './components/skills/skills.component';
-import { ProjetoInfosComponent } from "./components/skills/content/projetos/projeto-infos/projeto-infos.component";
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +9,13 @@ import { ProjetoInfosComponent } from "./components/skills/content/projetos/proj
   imports: [RouterOutlet],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit{
   title = 'Portifolio-2026';
+
+  ngAfterViewInit() {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }
 }

@@ -1,7 +1,7 @@
 <section>
     <div class="cards">
         @for (item of projetos; track $index) {
-                <div class="card " [routerLink]="['/projeto', $index]" >
+                <div class="card " data-aos="zoom-out-up" [routerLink]="['/projeto', $index]" >
                     <img [src]="item.url_image" alt="">
                     <h2>{{item.nome}}</h2>
                     <p>{{item.descricao}}</p>

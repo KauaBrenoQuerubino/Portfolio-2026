@@ -1,10 +1,6 @@
 
 
 
-#banner {
-  pointer-events: none !important;
-}
-
 .container {
     position: relative;
     z-index: 5;
@@ -44,7 +40,6 @@
 
             font-size: 2em;
 
-            animation: blurIn 2s ease forwards;
         }
 
         .icons {
@@ -79,33 +74,32 @@
     }
 }
 
-// h1 {
+// span {
 // 	display: inline-block;
 // 	opacity: 0;
-// 	filter: blur(20px);
-// 	animation: blurIn 2s ease forwards;
+// 	filter: blur(12px);
+// 	animation: blurIn 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 // }
 
-// h1:nth-child(1) {
-// 	animation-delay: 1s;
+// span:nth-child(1) {
+// 	animation-delay: 0.4s;
 // }
 
-// h1:nth-child(2) {
-// 	animation-delay: 1.2s;
+// sp:nth-child(2) {
+// 	animation-delay: 0.6s;
 // }
 
 // @keyframes blurIn {
 // 	0% {
 // 		opacity: 0;
-// 		filter: blur(30px);
+// 		filter: blur(12px);
+// 		transform: translateY(10px);
 // 	}
-// 	60% {
-// 		opacity: 1;
-// 		filter: blur(8px);
-// 	}
+
 // 	100% {
 // 		opacity: 1;
 // 		filter: blur(0);
+// 		transform: translateY(0);
 // 	}
 // }
 
