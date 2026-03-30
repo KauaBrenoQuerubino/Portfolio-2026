@@ -134,3 +134,26 @@ section {
         }
     }
 }
+
+
+@media screen and (max-width: 720px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px !important;
+
+        .col:first-child {
+            gap: 20px;
+            margin: 100px 0 !important;
+        }
+
+
+        video {
+
+                border-radius: 20px;
+                width: auto;
+                height: 200px !important;
+                box-shadow: rgba(255, 0, 106, 0.185) 0px 22px 70px 4px;
+            }
+    }
+}
